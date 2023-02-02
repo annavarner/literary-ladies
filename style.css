@@ -1,0 +1,302 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+body {
+  background-color: #FCF5E5;
+  font-family: "Garamond", serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #231F42;
+}
+
+h1, h2, h4 {
+  font-family: "Charm", cursive;
+  text-align: center;
+  color: #C42847;
+}
+h3 {
+  font-family: "Charm", cursive;
+  text-align: left;
+  color: #C42847;
+}
+header {
+  display: grid;
+  grid-template-columns: 110px auto;
+  align-items: center;
+}
+
+.logo-box {
+  width: 150px;
+  height: 150px;  
+}
+
+nav ul {
+  list-style: none; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
+  margin: 0;
+  padding: 8em 10em;
+  align-items: center;
+}
+a:hover {
+  color: #C42847;
+  background-color: #AEBCD6;
+}
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.2em;
+
+}
+
+.banner-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  grid-template-rows: auto;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.banner-box img {
+  width: 100%
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  grid-gap: 10px;
+
+}
+.home-heading {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.home-paragraph-1 {
+  grid-column: 1 / 4;  
+  grid-row: 2;
+  margin-top: -2em;
+}
+.cookie-pic {
+  grid-column: 4 / 5;
+  grid-row: 2;
+  height: 150px;
+  padding: 15px 10px;
+  margin-top: -2em;
+  border-radius: 2em;
+}
+.home-paragraph-2 {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  margin-top: -3em;
+}
+.contact-button {
+  grid-column: 2;
+  grid-row: 4;
+  margin-top: -3em;
+  margin-bottom: 3em;
+  border-radius: 25px;
+  height: 50px;
+}
+.next-reads {
+  grid-column: 1 / 4;
+  grid-row: 5;
+
+}
+.next-books {
+  grid-column: 1 / 4;
+  text-align: center;
+  margin-top: -3em;
+  margin-bottom: 3em;
+}
+.sidebar {
+  grid-column: 5 / 8;
+  grid-row: 1 / 6;
+  padding: 1em;
+  border: 2px solid;
+  border-color: #C42847;
+
+}
+.sidebar ul{
+  list-style-type: circle;
+}
+
+/* blog css */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: auto;  
+  align-content: center;
+}
+.blog-heading {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+.blog-heading-pic {
+  grid-column: 2;
+  grid-row: 1;
+  width: 250px;
+  border-radius: 2em;
+}
+.blog-post-1-title {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+.blog-post-1 {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  margin-top: -10px;
+}
+.blog-post-1-pic {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  width: 200px;
+  border-radius: 2em;
+}
+.blog-post-2-title {
+  grid-column: 1 / 3;
+  grid-row: 4;
+  margin-top: -10px;
+}
+.blog-post-2 {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  margin-top: -10px;
+}
+.blog-post-2b {
+  grid-column: 1 / 4;
+  grid-row: 6;
+  margin-top: -5px;
+}
+.blog-post-2c {
+  grid-column: 1 / 4;
+  grid-row: 7;
+  margin-top: -5px;
+}
+
+
+
+/* book suggestions page css */
+
+.tbr-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+
+} 
+
+.tbr-header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.tbr-pic-1 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  border-radius: 2em;
+  width: 250px;
+}
+
+.tbr-paragraph {
+  grid-column: 1 / 3;
+  grid-row: 2;
+
+}
+
+.tbr-list {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  margin-top: -125px;
+  list-style-type: circle;
+  padding: 0em 3em 3em 3em;
+}
+.tbr-pic-2 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  border-radius: 2em;
+  margin-top: 2em;
+  
+}
+
+.tbr-paragraph-2 {
+  grid-column: 2 / 4;
+  grid-row: 5;
+
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCCCCC;
+  border-radius: 1em;
+  grid-column: 2/ 4;
+  grid-row: 6;
+  margin-top: -300px;
+}
+
+.form-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999999;
+}
+
+input:focus,
+
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 1.5em;
+}
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000000;
+}
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 200px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+#feedback {
+  background-color:antiquewhite;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  padding: .5em;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Literary Ladies Book Club Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <img
+            src="https://cdn.glitch.global/ecc170a0-07a5-44ea-bca4-e8a9b93fc2dc/thumbnails%2Flogo-2-new.png?1647561317403" width="200" alt="literary ladies bookclub logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="booksuggestions.html">Book Suggestions</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="tbr-grid">
+          <h1 class="tbr-header">Book Suggestions/TBR List</h1>
+          <img
+            class="tbr-pic-1"
+            src="https://cdn.glitch.global/ecc170a0-07a5-44ea-bca4-e8a9b93fc2dc/thumbnails%2Fstacked-books.png?1646274317456"
+            alt="picture of a stack of books on the floor"
+          />
+          <p class="tbr-paragraph">
+            This is a list of books (in no particular order) on our collective
+            "to be read" lists, from which we usually select books for upcoming
+            book club meetings. If you have a book you'd like to suggest, please
+            fill out the form at the bottom of the page!
+          </p>
+          <ul class="tbr-list">
+            <li><em>The Lighthouse Keeper's Daughter</em> by Hazel Gaynor</li>
+            <li><em>The Girl Who Came Home</em> by Hazel Gaynor</li>
+            <li>
+              <em>The Lion, The Witch, and the Wardrobe</em> by C. S. Lewis
+            </li>
+            <li><em>The Enigma Game</em> by Elizabeth Wein</li>
+            <li><em>A Monster Like Me</em> by Wendy Swore</li>
+            <li><em>All The Truth That's In Me</em> by Julie Berry</li>
+            <li><em>Dear Mr Knightley</em> by Katherine Reay</li>
+            <li><em>The London House</em> by Katherine Reay</li>
+            <li><em>Gilded</em> by Marissa Meyer</li>
+            <li><em>Death On The Nile</em> by Agatha Christie</li>
+            <li>
+              <em>The War That Saved My Life</em> by Kimberly Brukaber Bradley
+            </li>
+            <li><em>What Alice Forgot</em> by Liane Moriarty</li>
+            <li><em>The Great Alone</em> by Kristin Hannah</li>
+            <li><em>The Mountain Between Us</em> by Charles Martin</li>
+            <li><em>Chocolate Chip Cookie Murder</em> by Joanne Fluke</li>
+            <li><em>Fishers of Men</em> by Gerald N Lund</li>
+            <li><em>The Lost Memoirs of Jane Austen</em> by Syrie James</li>
+            <li><em>Crime and Poetry</em> by Amanda Flower</li>
+            <li><em>The Last Dragonslayer</em> by Jasper Fforde</li>
+            <li>
+              <em>The Vanderbeekers of 141st Street</em> by Karina Yan Glaser
+            </li>
+          </ul>
+
+          <img
+            class="tbr-pic-2"
+            src="https://cdn.glitch.global/ecc170a0-07a5-44ea-bca4-e8a9b93fc2dc/thumbnails%2Fread-next.png?1645751208004"
+            alt="A stack of books with text that says What Should We Read Next?"
+          />
+
+          <p class="tbr-paragraph-2">
+            Do you have a book you think we should add to our TBR List or want
+            to send a suggestion of what we should read next? Please enter the
+            details below!
+          </p>
+          <div id="feedback"></div>
+          <form action="/my-handling-form-page" method="post">
+            <ul class="form-ul">
+              <li>
+                <label for="name">Name:</label>
+                <input id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email Address:</label>
+                <input id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="title">Book Title and Author:</label>
+                <input id="title" name="book-title" />
+              </li>
+              <li>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="user-comments">
+                </textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2022 Literary Ladies Bookclub - Anna Varner - WDD130-11
+        <a href="/site-plan.html"> Site Plan</a>
+      </p>
+    </footer>
+  </body>
+</html>
